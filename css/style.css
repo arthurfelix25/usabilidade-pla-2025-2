@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(119, 118, 118);
+}
+
+#main{
+    color:antiquewhite;
+    font-family: 'Monaco', monospace;
+    font-size: 20px;
+    text-align: right;
+}
+
+.middle {
+    text-align: center;
+    color :darkslateblue;
+    font-size:30px;
+    font-family: 'Monaco', monospace;
+}
+
+.video{
+    text-align: center;
+}
+
+.list1 {
+    color :darkslateblue;
+    font-size:24px;
+    font-family: 'Monaco', monospace;
+    text-align: left;
+    list-style-position: inside;
+}
+
+.stats{
+    text-align:justify;
+}
+
+#images{
+    text-align:center;
+}
+#images img{
+      display: inline-block;
+      margin: 0 10px;
+      vertical-align: middle;
+      width: 20%;
+      aspect-ratio: 1/ 1;
+      object-fit: cover;
+}
