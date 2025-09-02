@@ -11,7 +11,11 @@
         <header>
             <h1>Gliscor</h1>
             <p> GLISCOR!</p>
-            <nav id="stats" class="stats">
+
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+    </div>
+            <nav id="stats" class="stats" >
                  <img
                 src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/472.png"
                 alt="goat"
@@ -25,13 +29,42 @@
             </audio>
             </nav>
 
+            <script>
+        function updateProgressBar(percentage) {
+            const progressBar = document.getElementById('progress');
+            progressBar.style.width = percentage + '%';
+        }
+
+        let progress = 0;
+        const interval = setInterval(() => {
+            if (progress >= 100) {
+                clearInterval(interval);
+                document.querySelector('.progress-bar').style.display = 'none';
+                document.getElementById('stats').style.display = 'block';
+            } else {
+                progress += 10;
+                updateProgressBar(progress);
+            }
+        }, 500);
+    </script>
+        <div class="spinner" id="spinner"></div>
+
+    <script>
+        // Exemplo de como ocultar o spinner após um tempo
+        const spinner = document.getElementById('spinner');
+
+        setTimeout(() => {
+            spinner.style.display = 'none';
+        }, 5500); // Ocultar após 3 segundos
+    </script>
+
             <a style="font-size:22px; font-family:'Monaco', monospace;"
                href="https://bulbapedia.bulbagarden.net/wiki/Gliscor_(Pok%C3%A9mon)"
                target="_blank">
                 Pokedex
             </a>
             <h3>The Beast</h3>
-            <h2 style="text-align: center;">Gliscor é o GOAT</h2>
+            <h2 style="text-align: center;">Gliscor is the GOAT&#128016;</h2>
             <br>
             
             <nav id="images">
@@ -94,8 +127,8 @@
             </ul>
         </div>
 
-        <main id="main" class="main">
+    <main id="main" class="main">
             Gliscor is the beast of all.
-        </main>
+    </main>
     </body>
 </html>

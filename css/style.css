@@ -1,9 +1,9 @@
 body {
-    background-color: rgb(119, 118, 118);
+    background-color: rgb(187, 187, 187);
 }
 
 #main{
-    color:antiquewhite;
+    color:#375d96;;
     font-family: 'Monaco', monospace;
     font-size: 20px;
     text-align: right;
@@ -30,6 +30,7 @@ body {
 
 .stats{
     text-align:justify;
+    display: none;
 }
 
 #images{
@@ -43,3 +44,42 @@ body {
       aspect-ratio: 1/ 1;
       object-fit: cover;
 }
+
+.progress-bar {
+    width: 300px;
+    height: 30px;
+    background: #eee;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    margin: 16px 0;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background: #4c74af;
+    transition: width 0.5s;
+}
+
+.spinner {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 6px solid transparent;
+  border-top: 6px solid #4c74af;
+  border-radius: 50%;
+  animation: spin 1.2s cubic-bezier(0.5, 0.1, 0.5, 1) infinite;
+  background: radial-gradient(circle, rgba(76,116,175,0.15) 0%, transparent 70%);
+  box-shadow: 0 0 10px rgba(76, 116, 175, 0.2);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  
