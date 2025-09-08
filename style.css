@@ -1,0 +1,51 @@
+        body {
+            font-family: 'Monaco', monospace;
+            color: #ffffff;
+            background-color: #F4F4F4;
+            background-image: url('Background.jfif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            display: flex;
+        }
+        input[type=text],
+        input[type=password]{
+            width: 35%;
+            padding: 10px;
+            margin: 5px 0;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"]{
+            width: 35%;
+            padding: 5px;
+            margin: 5px 0;
+            display: block;
+            border: 1px solid #383434;
+            border-radius: 3px;
+            background-color: rgb(63, 59, 59);
+            color:rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover{
+            background-color: rgb(0, 0, 0);
+            border: 1px solid #ffee00
+        }
+        form{
+            background-color: white;
+            background-image: url('Calabreso.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 18rem;
+        }   
